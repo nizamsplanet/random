@@ -1,4 +1,4 @@
-10 REM Tic-Tac-Toe
+10 REM QBASIC - Yet Another Tic-Tac-Toe
 20 DIM b$(3,3)
 30 FOR i = 1 TO 3
 40   FOR j = 1 TO 3
@@ -34,8 +34,8 @@
 340   FOR j = 1 TO 3
 350     IF b$(1,j) = b$(2,j) AND b$(2,j) = b$(3,j) AND b$(1,j) <> " " THEN PRINT "Player "; x; " wins!": GOTO 410
 360   NEXT j
-370   IF b$(1,1) = b$(2,2) AND b$(2,2) = b$(3,3) AND b$(1,1) <> " " THEN PRINT "Player "; x; " wins!": GOTO 330
-380   IF b$(1,3) = b$(2,2) AND b$(2,2) = b$(3,1) AND b$(1,3) <> " " THEN PRINT "Player "; x; " wins!": GOTO 330
+370   IF b$(1,1) = b$(2,2) AND b$(2,2) = b$(3,3) AND b$(1,1) <> " " THEN PRINT "Player "; x; " wins!": GOTO 410
+380   IF b$(1,3) = b$(2,2) AND b$(2,2) = b$(3,1) AND b$(1,3) <> " " THEN PRINT "Player "; x; " wins!": GOTO 410
 390 NEXT turn
 400 PRINT "It's a tie!"
 410 END
